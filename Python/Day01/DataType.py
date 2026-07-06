@@ -1,0 +1,10 @@
+s="saani" 
+i=23
+f=23.88
+b=True
+n=None
+print(type(s))
+print(type(i))
+print(type(f))
+print(type(b))
+print(type(n))

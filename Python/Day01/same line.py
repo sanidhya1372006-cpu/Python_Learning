@@ -1,0 +1,5 @@
+print("Sanidhya","Sharma")
+print("34")
+print(34)
+print(34+34)
+print("34+34")

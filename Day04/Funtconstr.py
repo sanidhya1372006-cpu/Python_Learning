@@ -1,0 +1,11 @@
+a=["a","b","c","d"]
+a.append("e")
+print(a)
+a.reverse()
+print(a)
+a.insert(1,"A")
+print(a)
+a.remove("a")
+print(a)
+a.pop(1)
+print(a)

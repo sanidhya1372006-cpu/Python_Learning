@@ -1,0 +1,12 @@
+a={
+    "s":23,
+    "e":"elephnt",
+    "f":"fr"
+}
+print(a.keys())
+print(a.values())
+print(a.items())
+print(a.get("s"))
+print(a["s"])
+a.update("ss")
+print(a)

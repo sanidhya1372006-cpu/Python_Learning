@@ -1,0 +1,6 @@
+l=[1,2,3,44,567,87,45,98,200,56,72,55]
+for ev in l:
+    if(ev%2==0):
+        print(ev)
+else:
+    print("THES ALL ARE EVEN NUMBERS FROM THE LIST")

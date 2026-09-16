@@ -14,3 +14,4 @@ class Student:
 s=Student(99,98,99)
 s.avg()
 s.hello()
+ 

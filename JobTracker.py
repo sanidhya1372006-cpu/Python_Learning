@@ -19,6 +19,11 @@ class JobApplication:
 
 
 J1=JobApplication("Google","Software Engineer","Applied","26 August","22 Oct","Need Experience")
-J1.display()
 J2=JobApplication("TCS","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
-J2.display()
+J4=JobApplication("Hcl","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
+J3=JobApplication("Salesforce","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
+L=[J1,J2,J3,J4]
+
+for i in L:
+    i.display()
+

@@ -18,6 +18,12 @@ class JobApplication:
         print()
 
 
+
+    def update_status(self,status):
+        self.status=status
+
+
+
 J1=JobApplication("Google","Software Engineer","Applied","26 August","22 Oct","Need Experience")
 J2=JobApplication("TCS","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
 J4=JobApplication("Hcl","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
@@ -26,4 +32,16 @@ L=[J1,J2,J3,J4]
 
 for i in L:
     i.display()
+
+
+J5=JobApplication("Microsoft","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
+J5.display()
+J5.update_status("Pending")
+J5.display()
+
+J5=JobApplication("DronaHQ","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
+J5.display()
+J5.update_status("ShortListed")
+J5.display()
+
 

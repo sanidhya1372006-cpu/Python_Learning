@@ -22,16 +22,27 @@ class JobApplication:
     def update_status(self,status):
         self.status=status
 
+def show_by_status(L,statu):
+    for i in L:
+        if i.status==statu:
+            i.display()
+
+    
 
 
-J1=JobApplication("Google","Software Engineer","Applied","26 August","22 Oct","Need Experience")
+
+
+
+J1=JobApplication("Google","Software Engineer","Shortlisted","26 August","22 Oct","Need Experience")
 J2=JobApplication("TCS","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
-J4=JobApplication("Hcl","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
+J4=JobApplication("Hcl","QA","Not Applied","23 August","22 Sept","Need To Be Good In Automation")
 J3=JobApplication("Salesforce","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
 L=[J1,J2,J3,J4]
 
 for i in L:
     i.display()
+
+
 
 
 J5=JobApplication("Microsoft","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
@@ -43,5 +54,10 @@ J5=JobApplication("DronaHQ","QA","Applied","23 August","22 Sept","Need To Be Goo
 J5.display()
 J5.update_status("ShortListed")
 J5.display()
+
+
+print()
+print("Status check")
+show_by_status(L,"Shortlisted")
 
 

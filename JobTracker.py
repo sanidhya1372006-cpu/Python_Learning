@@ -27,7 +27,11 @@ def show_by_status(L,statu):
         if i.status==statu:
             i.display()
 
-    
+
+def show_by_company(L,company):
+    for i in L:
+        if i.company==company:
+            i.display()    
 
 
 
@@ -58,6 +62,11 @@ J5.display()
 
 print()
 print("Status check")
+
 show_by_status(L,"Shortlisted")
+
+print("According To Company Name:")
+print()
+show_by_company(L,"TCS")
 
 

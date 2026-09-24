@@ -35,6 +35,14 @@ def show_by_company(L,company):
 
 
 
+def count_by_status(L,status):
+    counter=0
+    for i in L:
+        if i.status==status:
+            counter+=1
+    print(status,":",counter)
+
+
 
 
 J1=JobApplication("Google","Software Engineer","Shortlisted","26 August","22 Oct","Need Experience")
@@ -70,3 +78,5 @@ print()
 show_by_company(L,"TCS")
 
 
+print("Total Status:")
+count_by_status(L,"Not Applied")

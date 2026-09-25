@@ -45,6 +45,9 @@ def count_by_status(L,status):
 
 
 
+
+
+
 J1=JobApplication("Google","Software Engineer","Shortlisted","26 August","22 Oct","Need Experience")
 J2=JobApplication("TCS","QA","Applied","23 August","22 Sept","Need To Be Good In Automation")
 J4=JobApplication("Hcl","QA","Not Applied","23 August","22 Sept","Need To Be Good In Automation")
@@ -53,6 +56,21 @@ L=[J1,J2,J3,J4]
 
 for i in L:
     i.display()
+
+
+def summary(L):
+    print("Total Application:",len(L))
+    print()
+    count_by_status(L,"Applied")
+    count_by_status(L,"Shortlisted")
+    count_by_status(L,"Not Applied")
+    count_by_status(L,"Rejected")
+
+
+def show_all(L):
+    for i in L:
+        i.display()
+
 
 
 
@@ -80,3 +98,8 @@ show_by_company(L,"TCS")
 
 print("Total Status:")
 count_by_status(L,"Not Applied")
+print()
+
+print("===Summary===")
+summary(L)
+
